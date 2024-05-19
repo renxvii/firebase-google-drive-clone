@@ -1,18 +1,17 @@
-import React from "react"
-import { Navbar, Nav } from "react-bootstrap"
-import { Link } from "react-router-dom"
+import React from "react";
+import { Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import AddFolderButton from "./AddFolderButton";
+import AddFileButton from "./AddFileButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 export default function NavbarComponent() {
   return (
-    <Navbar bg="light" expand="sm">
-      <Navbar.Brand as={Link} to="/">
-        WDS Drive
-      </Navbar.Brand>
-      <Nav>
-        <Nav.Link as={Link} to="/user">
-          Profile
-        </Nav.Link>
+    <Navbar bg="light" expand="lg">
+      <Navbar.Brand as={Link} to="/">MyDrive</Navbar.Brand>
+      <Nav className="mr-auto">
       </Nav>
     </Navbar>
-  )
+  );
 }
